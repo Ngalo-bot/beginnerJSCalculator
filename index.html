@@ -1,0 +1,112 @@
+<!--HI ITS MARVIN NGALONDE HERE **** THIS IS A VERY SIMPLE HTML,CSS AND PURE JAVASCRIPT CALCULATOR,HAVE FUN -->
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="description" content="Simple Calculator To Boost Skill">
+    <meta name="keywords" content="HTML, CSS, JavaScript,Calculator">
+    <meta name="author" content="Marvin Ngalonde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title -->
+        <title>JS CALCULATOR-SIMPLE</title>
+        <!--link to our css stylesheet-->
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        <!--Overall box-->
+        <div id="overallbox">
+            <header>
+                <canvas id="canvas" height="80px" width="350px">
+                   
+                </canvas>
+            </header>
+            
+            <!--container of buttons and display screen-->
+            <div id="buttons">
+
+                <!--two top screens-->
+                <div id="textbox">
+                    <input type="text" id="answer" value="">
+                    </br>
+                    <input type="text" id="digits" value="">
+                </div>
+                <!--end of screens-->
+
+                </br>
+                
+                <!--Table with buttons in each cell-->
+                <table>
+                    <tr >
+                        <td> <div id="alarm"></div></td>
+                        <td><b style="color:white"><i>ArviP</i></b></td>
+                        <td><b style="color:white"><i>ArviP</i></b></td>
+                        <td><b style="color:white"><i>ArviP</i></b></td>
+                    
+                    </tr>
+                    <tr>
+                        <td><button id="one" class="btnbrown" onclick="one()">1</button></td>
+                        <td><button class="btnbrown" onclick="two()">2</button></td>
+                        <td><button class="btnbrown" onclick="three()">3</button></td>
+                        <td><button class="btngreen" onclick="backspace()"><=</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button class="btnbrown" onclick="four()">4</button></td>
+                        <td><button class="btnbrown" onclick="five()">5</button></td>
+                        <td><button class="btnbrown" onclick="six()">6</button></td>
+                        <td><button class="btngreen" onclick="clearAll()">C</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button class="btnbrown" onclick="seven()">7</button></td>
+                        <td><button class="btnbrown" onclick="eight()">8</button></td>
+                        <td><button class="btnbrown" onclick="nine()">9</button></td>
+                        <td><button id="mult" class="btngreen" onclick="mult()">*</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button class="btnbrown" onclick="zero()">0</button></td>
+                        <td><button id='add' class="btngreen" onclick="add()">+</button></td>
+                        <td><button id="minus" class="btngreen" onclick="minus()" >-</button></td>
+                        <td><button id="div" class="btngreen" onclick="div()">&divide;</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button id="power" class="btngreen" onclick="power()">x<sup>y</sup></button></td>
+                        <td><button class="btngreen" onclick="period()">.</button></td>
+                        <td><button id="sqt" class="btngreen" onclick="sqtroot()">&radic;</button></td>
+                        <td><button class="btngreen" onclick="equals()">=</button></td>
+                        
+                    </tr>
+                    
+                </table>
+                <!--end of table of buttons-->
+               
+            </div>
+            <!-- end of container of buttons and display screen-->
+            
+        </div>  
+        <!--end of overall container-->   
+        <br>
+        <!--Footer here-->
+        <footer style="background-color: rgb(1, 1, 94);color:white;">
+            <div style="text-align:center">
+                <p><b>CONTACTS</b></p>
+                <li>+263 787 062 575</li>
+                <LI>+263 718 832 426</li>
+
+                <hr height="10px">
+
+               <p><a href="https://github.com/Ngalo-bot">GITHUB</a></p> 
+               <P> Developed By Marvin Ngalonde</P>
+            </div>
+        </footer>
+    </body>
+
+</html>
+
+<!--Link to our javasceipt file-->
+<script src="back.js"></script>
+<script src="header.js"></script>
